@@ -130,7 +130,8 @@ ggplot() + geom_line(data=new_data_missing,aes(x=date,y=PM10,color="Missing Impu
 
 # Missing Prediction variable to predict the data on training set to see the accuracy 
 missing_prediction2 <- predict(reg1)
-
+# Creating Rsquare function
+rsq <- function (x, y) cor(x, y) ^ 2
 # Different accuracy methods
 R <- rPearson(new_data_non_missing$PM10 ,missing_prediction2)
 R2 <- rsq(new_data_non_missing$PM10 ,missing_prediction2)
