@@ -6,6 +6,9 @@ library(lubridate)
 library(data.table)
 library(ggplot2)
 library(timeDate)
+# These last two libraries are for accuracy measurement
+library(Metrics)
+library(HydroGOF)
 # Setting the working directory 
 setwd("E:/Forecasting Paper Analysis")
 # Reading the data and putting the None value as NA
