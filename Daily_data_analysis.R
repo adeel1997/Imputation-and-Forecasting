@@ -167,7 +167,7 @@ length(missing_prediction_2) ==length(new_data_pm2_non_missing$Y.PM2.5)
 
 # Different accuracy methods
 R <- rPearson(new_data_pm2_non_missing$Y.PM2.5,missing_prediction_2)
-R2 <- rsq(new_data_pm2_non_missing$Y.PM2.5 ,missing_prediction_2)
+R2 <- R2(new_data_pm2_non_missing$Y.PM2.5 ,missing_prediction_2)
 RMSE <- rmse(new_data_pm2_non_missing$Y.PM2.5 ,missing_prediction_2)
 NRMSE <- nrmse(new_data_pm2_non_missing$Y.PM2.5 ,missing_prediction_2)
 Bias <- bias(new_data_pm2_non_missing$Y.PM2.5 ,missing_prediction_2)
